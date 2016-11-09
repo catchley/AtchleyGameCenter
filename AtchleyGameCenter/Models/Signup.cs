@@ -5,7 +5,7 @@
         A ,B, C, D, F
     }
 
-    public class Enrollment
+    public class Signup
     {
         public int SignupID { get; set; }
         public int GameID { get; set; }

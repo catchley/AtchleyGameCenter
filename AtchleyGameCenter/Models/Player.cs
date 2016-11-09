@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace AtchleyGameCenter.Models
 {
-    public class Student
+    public class Player
     {
         public int ID { get; set; }
         public string LastName { get; set; }
