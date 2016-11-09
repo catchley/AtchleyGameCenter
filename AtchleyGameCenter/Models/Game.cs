@@ -10,6 +10,6 @@ namespace AtchleyGameCenter.Models
         public string Title { get; set; }
         public int Difficulty { get; set; }
 
-        public virtual ICollection<Enrollment> Enrollments { get; set; }
+        public virtual ICollection<Signup> Signups { get; set; }
     }
 }
