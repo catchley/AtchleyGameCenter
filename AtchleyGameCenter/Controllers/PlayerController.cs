@@ -47,7 +47,7 @@ namespace AtchleyGameCenter.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,LastName,FirstName,Sex,Birthday")] Player player)
+        public ActionResult Create([Bind(Include = "ID,LastName,FirstName,Email,Sex,Member,Birthday")] Player player)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace AtchleyGameCenter.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,LastName,FirstName,Sex,Birthday")] Player player)
+        public ActionResult Edit([Bind(Include = "ID,LastName,FirstName,Email,Sex,Member,Birthday")] Player player)
         {
             if (ModelState.IsValid)
             {

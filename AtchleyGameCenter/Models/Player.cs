@@ -13,7 +13,12 @@ namespace AtchleyGameCenter.Models
         public int ID { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
+
+        [Display(Name = "Email Address")]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
         public Sex Sex { get; set; }
+        public bool Member { get; set; }
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString ="{0:yyyy-MM-dd}", ApplyFormatInEditMode =true)]

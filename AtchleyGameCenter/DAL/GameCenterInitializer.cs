@@ -13,9 +13,9 @@ namespace AtchleyGameCenter.DAL
         {
             var players = new List<Player>
             {
-            new Player{FirstName="Carson",LastName="Alexander",Birthday=DateTime.Parse("2000-09-01")},
-            new Player{FirstName="Miller",LastName="Robert",Birthday=DateTime.Parse("1985-05-08")},
-            new Player{FirstName="Johnson",LastName="Richard",Birthday=DateTime.Parse("1976-12-21")} 
+            new Player{FirstName="Carson",LastName="Alexander",Birthday=DateTime.Parse("2000-09-01"), Sex=Sex.Male, Email = "calex@yahoo.com"},
+            new Player{FirstName="Miller",LastName="Robert",Birthday=DateTime.Parse("1985-05-08"), Sex = Sex.Male, Email = "robm@gmail.com"},
+            new Player{FirstName="Johnson",LastName="Rebecca",Birthday=DateTime.Parse("1976-12-21") , Sex = Sex.Female, Email="rebjon@hotmail.com"} 
             };
 
             players.ForEach(s => context.Players.Add(s));

@@ -4,12 +4,12 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Players</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<table class="table table-bordered table-inverse">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.LastName)
@@ -18,7 +18,13 @@
             @Html.DisplayNameFor(model => model.FirstName)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Sex)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Birthday)
@@ -35,7 +41,13 @@
             @Html.DisplayFor(modelItem => item.FirstName)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Sex)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Birthday)
