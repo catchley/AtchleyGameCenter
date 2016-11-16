@@ -9,6 +9,8 @@ namespace AtchleyGameCenter.Models
         public int GameID { get; set; }
         public string Title { get; set; }
         public int Difficulty { get; set; }
+        public int NumberOfPlayers { get; set; }
+        public int NumberOfTeams { get; set; }
 
         public virtual ICollection<Signup> Signups { get; set; }
     }
