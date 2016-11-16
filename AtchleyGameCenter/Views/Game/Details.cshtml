@@ -1,0 +1,58 @@
+﻿@model AtchleyGameCenter.Models.Game
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Game</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Difficulty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Difficulty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxNumberOfPlayers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxNumberOfPlayers)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxNumberOfTeams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxNumberOfTeams)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExperienceRequired)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExperienceRequired)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GameID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

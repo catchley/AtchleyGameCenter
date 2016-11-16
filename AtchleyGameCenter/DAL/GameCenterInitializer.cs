@@ -26,10 +26,10 @@ namespace AtchleyGameCenter.DAL
             context.SaveChanges();
             var games = new List<Game>
             {
-            new Game{GameID=1,Title="Chess",Difficulty=3,},
-            new Game{GameID=2,Title="Darts",Difficulty=1,},
-            new Game{GameID=3,Title="Pong",Difficulty=2,},
-            new Game{GameID=4,Title="Pool",Difficulty=2,}
+            new Game{GameID=1,Title="Chess",Difficulty=3, MaxNumberOfTeams =2, MaxNumberOfPlayers=2, ExperienceRequired=true},
+            new Game{GameID=2,Title="Darts",Difficulty=1,MaxNumberOfTeams=3, MaxNumberOfPlayers = 3, ExperienceRequired= false},
+            new Game{GameID=3,Title="Pong",Difficulty=2,MaxNumberOfTeams=4, MaxNumberOfPlayers = 4, ExperienceRequired = false},
+            new Game{GameID=4,Title="Pool",Difficulty=2,MaxNumberOfTeams=6, MaxNumberOfPlayers = 3, ExperienceRequired = true}
             };
             games.ForEach(s => context.Games.Add(s));
             context.SaveChanges();

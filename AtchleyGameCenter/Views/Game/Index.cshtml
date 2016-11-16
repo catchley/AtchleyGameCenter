@@ -1,0 +1,58 @@
+﻿@model IEnumerable<AtchleyGameCenter.Models.Game>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="greentype">Games</h2>
+<h4> Create new games or edit the ones we already have.</h4>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-bordered table-inverse">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Difficulty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxNumberOfPlayers)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxNumberOfTeams)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExperienceRequired)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Difficulty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxNumberOfPlayers)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxNumberOfTeams)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExperienceRequired)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.GameID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.GameID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.GameID })
+        </td>
+    </tr>
+}
+
+</table>
