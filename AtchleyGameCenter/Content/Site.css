@@ -22,3 +22,11 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.greentype{
+    color:green;
+}
+.greenback{
+    background: linear-gradient(45deg, green 50%, lightgreen);
+}
+
