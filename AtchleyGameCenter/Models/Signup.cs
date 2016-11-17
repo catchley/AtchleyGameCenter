@@ -7,6 +7,8 @@
 
     public class Signup
     {
+
+        //Entities for the signup model
         public int SignupID { get; set; }
         public int GameID { get; set; }
         public int PlayerID { get; set; }

@@ -5,6 +5,8 @@ namespace AtchleyGameCenter.Models
 {
     public class Game
     {
+
+        //Entities for the game model
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int GameID { get; set; }
         public string Title { get; set; }
